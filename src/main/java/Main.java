@@ -57,19 +57,15 @@ public class Main {
         System.out.println();
 
 
-
-        int i;
         startTime = System.nanoTime();
         Arrays.sort(bigArr);
-        i = binarySearch(bigArr, 7, 0, bigArr.length - 1);
-        System.out.println("i: " + i);
+        binarySearch(bigArr, 7, 0, bigArr.length - 1);
         System.out.println("Двоичный поиск занял: " + (System.nanoTime() - startTime) + " нс");
 
         System.out.println();
 
         startTime = System.nanoTime();
-        i = recBinarySearch(7, 0, copyBigArr.length - 1, copyBigArr);
-        System.out.println("i: " + i);
+        recBinarySearch(7, 0, copyBigArr.length - 1, copyBigArr);
         System.out.println("Рекурсивный двоичный поиск занял: " + (System.nanoTime() - startTime) + " нс");
 
     }
